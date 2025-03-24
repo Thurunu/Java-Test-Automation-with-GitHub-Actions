@@ -22,9 +22,6 @@ jobs:
     - name: Build with Maven & Run Tests
       run: mvn clean verify # This command will create the project and run automatically test cases.
 
-    - name: Check Test artifact directory is already created
-      run: pwd
-
     - name: Upload Test Reports
       uses: actions/upload-artifact@v4
       with:
